@@ -31,8 +31,8 @@ class _MyAppState extends State<MyApp> {
 
             }
 
-            return const SpinKitRotatingCircle(
-              color: Colors.white,
+            return const SpinKitCubeGrid(
+              color: Colors.blue,
               size: 50.0,
             );
           },
@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<String> getName() async {
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 10));
     return 'kelvin';
   }
 }
